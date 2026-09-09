@@ -26,11 +26,11 @@ SQL-анализ финансовых и продуктовых показате
 
 #### Dashboard — часть 1
 
-![Dashboard%201.jpg](./скриншоты/Dashboard%201.jpg)
+![Dashboard-1.jpg](./скриншоты/Dashboard%201.jpg)
 
 #### Dashboard — часть 2
 
-![Dashboard%202.jpg](./скриншоты/Dashboard%202.jpg)
+![Dashboard-2.jpg](./скриншоты/Dashboard%202.jpg)
 
 ## Основные метрики
 
