@@ -1,41 +1,73 @@
-# Sales & Profitability Dashboard
+# Анализ службы доставки
 
-SQL analysis and Redash dashboard for an e-commerce delivery service.
+SQL-анализ финансовых и продуктовых показателей сервиса доставки товаров.
 
-## Project overview
+## О проекте
 
-This project analyzes the financial and product performance of a delivery service using PostgreSQL and Redash.
+Цель проекта — проанализировать выручку, затраты и прибыльность сервиса, а также оценить ключевые показатели монетизации пользователей.
 
-## Dashboard visualizations
+В рамках проекта были рассчитаны основные финансовые и продуктовые метрики и собран дашборд в Redash.
 
-- Daily Revenue and Daily Revenue Change
-- Total Revenue and Total Costs
-- Daily Gross Profit and Gross Profit Ratio
-- Total Gross Profit and Total Gross Profit Ratio
-- ARPU, ARPPU and AOV by Day
-- ARPU, ARPPU and AOV by Weekday
-- Running ARPU, ARPPU and AOV by Day
+## Дашборд
+
+Дашборд включает следующие визуализации:
+
+- Daily Revenue и изменение выручки
+- Total Revenue и Total Costs
+- Daily Gross Profit и Gross Profit Ratio
+- Total Gross Profit и Total Gross Profit Ratio
+- ARPU, ARPPU и AOV по дням
+- ARPU, ARPPU и AOV по дням недели
+- Running ARPU, ARPPU и AOV
 - Revenue from New Users
 - Revenue by Products
 
-## Key metrics
+### Скриншоты
 
-- Revenue
-- Costs
-- VAT
-- Gross profit
-- Gross profit ratio
-- Cumulative revenue, costs, VAT and gross profit
-- ARPU, ARPPU and AOV
-- New-user revenue share
-- Product revenue share
+#### Dashboard — часть 1
 
-## Tools
+![Dashboard 1](./скриншоты/Dashboard%201.jpg)
 
-- SQL
-- PostgreSQL
-- Redash
+#### Dashboard — часть 2
 
-## SQL queries
+![Dashboard 2](./скриншоты/Dashboard%202.jpg)
 
-The `sql/dashboard_queries.sql` file contains the SQL queries used for the analysis and dashboard.
+## Основные метрики
+
+В проекте рассчитаны:
+
+- **Revenue** — выручка
+- **Costs** — затраты
+- **Gross Profit** — валовая прибыль
+- **Gross Profit Ratio** — рентабельность по валовой прибыли
+- **ARPU** — средняя выручка на пользователя
+- **ARPPU** — средняя выручка на платящего пользователя
+- **AOV** — средний чек
+- **Running ARPU / ARPPU / AOV** — накопительные показатели
+- **Revenue from New Users** — выручка от новых пользователей
+
+## SQL-анализ
+
+SQL-запросы находятся в папке [`sql`](./sql).
+
+В проекте использовались:
+
+- CTE
+- JOIN
+- агрегатные функции
+- оконные функции
+- `CASE WHEN`
+- `LAG`
+- `EXTRACT`
+- `UNNEST`
+- условная агрегация
+
+## Инструменты
+
+- **PostgreSQL**
+- **SQL**
+- **Redash**
+
+## Результат
+
+В результате был создан аналитический дашборд для мониторинга финансовых показателей, пользовательской монетизации и продуктовых метрик сервиса доставки.
