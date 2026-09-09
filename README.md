@@ -2,13 +2,11 @@
 
 SQL analysis and Redash dashboard for an e-commerce delivery service.
 
-## Dashboard
+## Project overview
 
-The dashboard covers revenue, costs, VAT, gross profit, customer monetization metrics, new-user revenue, and product revenue.
+This project analyzes the financial and product performance of a delivery service using PostgreSQL and Redash.
 
-![Sales & Profitability Dashboard](screenshots/dashboard.png)
-
-## Visualizations
+## Dashboard visualizations
 
 - Daily Revenue and Daily Revenue Change
 - Total Revenue and Total Costs
@@ -20,6 +18,18 @@ The dashboard covers revenue, costs, VAT, gross profit, customer monetization me
 - Revenue from New Users
 - Revenue by Products
 
+## Key metrics
+
+- Revenue
+- Costs
+- VAT
+- Gross profit
+- Gross profit ratio
+- Cumulative revenue, costs, VAT and gross profit
+- ARPU, ARPPU and AOV
+- New-user revenue share
+- Product revenue share
+
 ## Tools
 
 - SQL
@@ -28,4 +38,4 @@ The dashboard covers revenue, costs, VAT, gross profit, customer monetization me
 
 ## SQL queries
 
-The `sql/` directory contains the queries used for the analysis and dashboard.
+The `sql/dashboard_queries.sql` file contains the SQL queries used for the analysis and dashboard.
