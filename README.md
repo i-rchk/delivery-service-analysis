@@ -47,7 +47,7 @@ SQL-анализ финансовых, продуктовых и маркети�
 
 Сводный дашборд сравнивает две рекламные кампании по ключевым маркетинговым метрикам и динамике окупаемости.
 
-> Dashboard screenshot can be added to `screenshots/` when the final Redash export is uploaded to the repository.
+![Marketing Campaigns — Comparative Analysis Dashboard](./screenshots/Marketing_metrics_dashboard.jpg)
 
 ## SQL Analysis
 
