@@ -1,73 +1,76 @@
-# Анализ службы доставки
+# Delivery Service Analysis
 
-SQL-анализ финансовых и продуктовых показателей сервиса доставки товаров.
+SQL-анализ финансовых, продуктовых и маркетинговых показателей сервиса доставки товаров.
 
 ## О проекте
 
-Цель проекта - проанализировать выручку, затраты и прибыльность сервиса, а также оценить ключевые показатели монетизации пользователей.
+Проект выполнен в рамках блока **Product Metrics** курса Karpov.Courses.
 
-В рамках проекта были рассчитаны основные финансовые и продуктовые метрики и собран дашборд в Redash.
+Цель проекта — провести комплексный анализ сервиса доставки с точки зрения экономики продукта и эффективности маркетинговых кампаний.
 
-## Дашборд
+## Product Metrics
 
-Дашборд включает следующие визуализации:
+### 1. Product Economics
 
-- Daily Revenue и изменение выручки
+В первой части проекта проанализирована экономика продукта и рассчитаны ключевые финансовые и продуктовые метрики:
+
+- Revenue и Revenue Change
+- Costs
+- Gross Profit и Gross Profit Ratio
 - Total Revenue и Total Costs
-- Daily Gross Profit и Gross Profit Ratio
-- Total Gross Profit и Total Gross Profit Ratio
-- ARPU, ARPPU и AOV по дням
-- ARPU, ARPPU и AOV по дням недели
+- ARPU, ARPPU и AOV
 - Running ARPU, ARPPU и AOV
 - Revenue from New Users
 - Revenue by Products
 
-### Скриншоты
+### 2. Marketing Metrics
 
-#### Dashboard - часть 1
+Во второй части проведено сравнение двух рекламных кампаний:
 
-![Dashboard 1](./screenshots/Dashboard-1.jpg)
+- CAC — Customer Acquisition Cost
+- ROI — Return on Investment
+- Average Check за первую неделю
+- Retention 1-го и 7-го дня
+- Cumulative ARPPU vs CAC
 
-#### Dashboard - часть 2
+Анализ позволяет сравнить стоимость привлечения пользователей, их поведение и удержание, а также определить окупаемость рекламных расходов.
 
-![Dashboard 2](./screenshots/Dashboard-2.jpg)
+## Dashboards
 
-## Основные метрики
+### Sales & Profitability Dashboard
 
-В проекте рассчитаны:
+![Sales & Profitability Dashboard — part 1](./screenshots/Dashboard-1.jpg)
 
-- **Revenue** — выручка
-- **Costs** — затраты
-- **Gross Profit** — валовая прибыль
-- **Gross Profit Ratio** — рентабельность по валовой прибыли
-- **ARPU** — средняя выручка на пользователя
-- **ARPPU** — средняя выручка на платящего пользователя
-- **AOV** — средний чек
-- **Running ARPU / ARPPU / AOV** — накопительные показатели
-- **Revenue from New Users** — выручка от новых пользователей
+![Sales & Profitability Dashboard — part 2](./screenshots/Dashboard-2.jpg)
 
-## SQL-анализ
+### Marketing Campaigns — Comparative Analysis Dashboard
+
+Сводный дашборд сравнивает две рекламные кампании по ключевым маркетинговым метрикам и динамике окупаемости.
+
+> Dashboard screenshot can be added to `screenshots/` when the final Redash export is uploaded to the repository.
+
+## SQL Analysis
 
 SQL-запросы находятся в папке [`sql`](./sql).
 
-В проекте использовались:
+### Techniques used
 
 - CTE
-- Разные типы JOIN
-- агрегатные функции
-- оконные функции
+- JOINs
+- Aggregate functions
+- Window functions
 - `CASE WHEN`
 - `LAG`
 - `EXTRACT`
 - `UNNEST`
-- условная агрегация
+- Conditional aggregation
 
-## Инструменты
+## Tools
 
 - **PostgreSQL**
 - **SQL**
 - **Redash**
 
-## Результат
+## Project Outcome
 
-В результате был создан аналитический дашборд для мониторинга финансовых показателей, пользовательской монетизации и продуктовых метрик сервиса доставки.
+В результате собран единый набор продуктовых метрик и два Redash-дашборда, которые позволяют оценивать экономику сервиса доставки и сравнивать эффективность рекламных кампаний.
